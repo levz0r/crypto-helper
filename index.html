@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crypto helper</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="./bundle.js"></script>
+
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Crypto Helper</h1>
+            <h3 class="subtitle">Use this tool to convert your mnemonic seed to Xpub key.</h3>
+            <p class="section">Suggestion: Please download
+                <a href="./index.html">the current html file</a> and
+                <a href="./bundle.js">bundle.js</a> and do the conversions offline.</p>
+            <form id="crptoForm">
+                <div class="field">
+                    <label class="label">Mnemonic (12 words or more)</label>
+                    <div class="control">
+                        <input id="mnemonicInput" class="input" type="text" autocomplete="off" placeholder="Mnemonic (12 words or more)">
+                    </div>
+                    <p id="errorInputText" class="help is-danger is-invisible">Please write at least 12 words.</p>
+                </div>
+                <div class="field">
+                    <label class="label">Xpub Key</label>
+                    <div class="control">
+                        <div class="field has-addons">
+                            <div class="control is-expanded">
+                                <input id="xpubKeyOutput" class="input" type="text" placeholder="Click 'convert'" readonly>
+                            </div>
+                            <div class="control">
+                                <a id="copyXpubButton" class="button" href="#" style="z-index: 100;" disabled title="Copy to clipboard">
+                                    <i class="far fa-copy"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field is-grouped">
+                    <div class="control">
+                        <button class="button is-link" type="submit">Convert</button>
+                    </div>
+                    <div class="control">
+                        <button class="button is-text" type="reset">Clear</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="has-text-centered">
+        <a href="https://bulma.io">
+            <img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+        </a>
+    </footer>
+</body>
+
+</html>
