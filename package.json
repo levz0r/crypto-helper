@@ -13,6 +13,19 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/levz0r/crypto-helper.git"
+  },
+  "keywords": [
+    "mnemonic converter",
+    "seed converter",
+    "xpub converter"
+  ],
+  "bugs": {
+    "url": "https://github.com/levz0r/crypto-helper/issues"
+  },
+  "author": "Lev Gelfenbuim",
+  "license": "ISC",
+  "homepage": "https://levz0r.github.io/crypto-helper/"
 }
